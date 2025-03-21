@@ -153,7 +153,7 @@ body.dark-mode .hamburger-icon span {
   top: 0;
   right: -100%;
   width: 250px; /* Slightly narrower */
-  height: 40vh;
+  height: 50vh;
   background: white;
   transition: right 0.3s ease-in-out;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
