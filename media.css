@@ -1,0 +1,79 @@
+@media screen and (max-width: 849px) {
+    .nav-links {
+      display: none; /* Hide links by default */
+    }
+  
+    .hamburger-icon {
+      display: flex; /* Show hamburger on small screens */
+    }
+  
+    .mobile-menu {
+      display: none; /* Hide mobile menu by default */
+    }
+  
+    /* Show the mobile menu when it's active */
+    .mobile-menu.active {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      width: 100%;
+      padding-top: 80px; /* To account for navbar height */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+/* Other styling adjustments for smaller screens */
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px; /* Adjust size */
+    display: flex;
+    flex-direction: column; /* Stack text */
+    align-items: center;
+    line-height: 1.2;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .nav-links a:hover {
+    color: black; /* Ensures no hover effect */
+  }
+
+  .nav-links a::after {
+    background-color: black; /* Keeps underline black */
+  }
+
+  /* About Us */
+
+  @media (max-width: 768px) {
+    .home {
+        padding: 20px 10px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .about {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 480px) {
+        #about {
+          padding: 15px; /* Even less padding on small screens */
+          margin-top: 15px; /* Less margin on top */
+          margin-bottom: 15px; /* Less margin at the bottom */
+        }
+      
+        #about h1 {
+          font-size: 24px; /* Smaller title font on mobile */
+        }
+      
+        #about p {
+          font-size: 14px; /* Smaller paragraph text on mobile */
+        }
+      }
+    }
+}
