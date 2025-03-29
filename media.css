@@ -1,0 +1,149 @@
+@media screen and (max-width: 849px) {
+    .nav-links {
+      display: none; /* Hide links by default */
+    }
+  
+    .hamburger-icon {
+      display: flex; /* Show hamburger on small screens */
+    }
+  
+    .mobile-menu {
+      display: none; /* Hide mobile menu by default */
+    }
+  
+    /* Show the mobile menu when it's active */
+    .mobile-menu.active {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      width: 100%;
+      padding-top: 80px; /* To account for navbar height */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+/* Other styling adjustments for smaller screens */
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px; /* Adjust size */
+    display: flex;
+    flex-direction: column; /* Stack text */
+    align-items: center;
+    line-height: 1.2;
+  }
+
+
+
+@media (prefers-color-scheme: light) {
+  .nav-links a:hover {
+    color: black; /* Ensures no hover effect */
+  }
+
+  .nav-links a::after {
+    background-color: black; /* Keeps underline black */
+  }
+}
+}
+
+/* About Us */
+
+@media (max-width: 364px) {
+  /* Adjust the About section for mobile screens */
+  .about-us-box {
+      padding: 20px; /* Reduce padding for mobile */
+      margin-top: 60px; /* Adjust margin for mobile */
+      max-width: 100%; /* Allow the section to take full width */
+  }
+
+  .about-us-box h1 {
+      font-size: 28px; /* Slightly smaller font size for heading */
+      margin-bottom: 15px; /* Reduce the space below the heading */
+  }
+
+  .about-us {
+      font-size: 16px; /* Smaller font size for better readability */
+      max-width: 90%; /* Limit the width of the text container */
+  }
+
+  .about-us p {
+      font-size: 15px; /* Reduce font size on mobile */
+      line-height: 1.5; /* Adjust line height for mobile */
+      margin-bottom: 15px; /* Adjust space between paragraphs */
+  }
+}
+
+/* Further adjustments for very small screens (e.g., phones under 480px) */
+@media (max-width: 424px) {
+  .about-us-box {
+      padding: 15px;
+  }
+
+  .about-us-box h1 {
+      font-size: 26px; /* Further reduce font size for smaller screens */
+  }
+}
+
+/* Schedules */
+
+
+@media (max-width: 793px) {
+  #schedules {
+    padding-bottom: 200px; /* Adjust the top padding on smaller screens */
+    padding-top: 50vh;
+  }
+
+  .tour-sched {
+    flex-direction: column; /* Stack the lists vertically */
+    gap: 10px; /* Reduce the gap between lists */
+  }
+
+  .left-list, .right-list {
+    width: 100%; /* Make the lists take up full width on smaller screens */
+    padding: 15px;
+  }
+
+  #schedules h1 {
+    font-size: 36px; /* Reduce the font size for smaller screens */
+  }
+
+  #schedules h2 {
+    font-size: 20px; /* Adjust the size of h2 */
+  }
+}
+
+/* Media query for smaller screens like mobile (max-width 424px) */
+@media (max-width: 424px) {
+  .left-list, .right-list {
+    width: 100%; /* Make the lists take up full width on smaller screens */
+    padding: 15px;
+  }
+
+  .left-list, .right-list {
+    width: 100%; /* Ensure the lists take up the full screen */
+    padding: 10px;
+  }
+}
+
+/* Media query for smaller screens like mobile (max-width 480px) */
+@media (max-width: 424px) {
+  #schedules h1 {
+    font-size: 26px; /* Further reduce the font size for very small screens */
+  }
+
+  #schedules h2 {
+    font-size: 25px;
+  }
+
+  .left-list, .right-list {
+    width: 100%; /* Ensure the lists take up the full screen */
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+
+  .left-list li, .right-list li {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+    padding: 10px 0;
+  }
+}
