@@ -87,11 +87,23 @@
 
 /* Schedules */
 
+@media (max-width: 1517px) {
+  #schedules {
+    padding-top: 10vh;
+  }
+}
+
+@media (max-width: 1495px) {
+  #schedules {
+    padding-top: 90vh;
+  }
+}
+
 
 @media (max-width: 793px) {
   #schedules {
     padding-bottom: 200px; /* Adjust the top padding on smaller screens */
-    padding-top: 50vh;
+    padding-top: 150vh;
   }
 
   .tour-sched {
@@ -113,11 +125,28 @@
   }
 }
 
+@media (max-width: 560px) {
+  #schedules {
+    padding-top: 180vh;
+  }
+}
+
+@media (max-width: 525px) {
+  #schedules {
+    padding-top: 190vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #schedules {
+    padding-top: 195vh;
+  }
+}
+
 /* Media query for smaller screens like mobile (max-width 424px) */
 @media (max-width: 424px) {
   .left-list, .right-list {
     width: 100%; /* Make the lists take up full width on smaller screens */
-    padding: 15px;
   }
 
   .left-list, .right-list {
@@ -145,5 +174,58 @@
   .left-list li, .right-list li {
     font-size: 16px; /* Adjust the font size for smaller screens */
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 357px) {
+  #schedules {
+    padding-top: 205vh;
+  }
+}
+
+/* Practice Schedule */
+
+@media (max-width: 1495px) {
+  .schedule {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 793px) {
+  .day ul {
+    font-size: 25px;
+  }
+}
+
+/* Contact */
+
+@media (max-width: 1495px) {
+  #contact {
+    padding-top: 120vh;
+  }
+}
+
+@media (max-width: 793px) {
+  #contact {
+    padding-top: 160vh;
+  }
+}
+
+@media (max-width: 560px) {
+  #contact {
+    padding-top: 190vh;
+  }
+}
+
+@media (max-width: 424px) {
+  #contact {
+    padding-top: 200vh;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact {
+    padding-top: 220vh;
   }
 }
