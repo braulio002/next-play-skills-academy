@@ -169,6 +169,7 @@ body.dark-mode .hamburger-icon span {
 }
 
 body.dark-mode .mobile-menu {
+  position: fixed;
   background-color: #1e1e1e; /* Dark mode background for mobile menu */
 }
 
@@ -178,6 +179,7 @@ body.dark-mode .mobile-menu {
 
 /* Mobile Menu Links */
 .menu-links {
+  position: fixed;
   list-style: none;
   width: 100%;
   text-align: center;
