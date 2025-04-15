@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Play Skills Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body class="dark-mode">
+  <!-- Navigation -->
+   <nav>
+    <ul class="nav-links left">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+    <div class="logo">
+      <span class="logo-top"><i>Next Play</i></span>
+      <span class="logo-bottom"><i>Skills Academy</i></span>
+    </div>
+    <ul class="nav-links right">
+      <li><a href="#schedules">Schedules</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <button id="theme-toggle" class="theme-button"><i class="ri-moon-fill"></i></button>
+  <!-- Mobile Menu -->
+   <div class="mobile-menu">
+    <ul class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+      <li><a href="#schedules" onclick="toggleMenu()">Schedules</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+  <!-- About -->
+   <section id="about">
+    <div class="about-us-box">
+      <h1>About Us</h1>
+      <div class="about-us">
+        <p>
+          Next Play Skills Academy is a youth basketball 
+          program dedicated to helping athletes develop skills 
+          that will help them both on and off the court. Whether 
+          it's local development or national competitive play, 
+          Next Play offers both. This allows for a more balanced 
+          environment where your child's needs are met and they are 
+          given opportunities to be put in a position where their 
+          skill sets can be challenged for growth.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery -->
+   <section id="gallery">
+    <!-- Videos Section -->
+     <section class="media-section">
+      <div class="videos-container">
+        <video controls class="video-item">
+          <source src="Gallery/video1.mp4" alt="Video 1" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls class="video-item">
+          <source src="Gallery/video2.mp4" alt="Video 2" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Photos Section -->
+       <div class="photos-container">
+        <div class="photo-row">
+          <img src="Gallery/photo1.jpg" alt="Photo 1" class="photo-item">
+          <img src="Gallery/photo2.jpg" alt="Photo 2" class="photo-item">
+        </div>
+        <div class="photo-row">
+          <img src="Gallery/photo3.jpg" alt="Photo 3" class="photo-item">
+          <img src="Gallery/photo4.jpg" alt="Photo 4" class="photo-item">
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- Splash Screen -->
+   <div id="splash-screen">
+    <img src="Gallery/NXTPRO.jpg" alt="NXTPRO Logo" class="splash-image first">
+    <img src="Gallery/NXTPSA.jpg" alt="Next Play Skills Academy Logo" class="splash-image second">
+  </div>
+  <!-- Schedules -->
+   <section id="schedules">
+    <h1>Tournament Schedule</h1>
+    <div class="tour-sched">
+      <ul class="left-list">
+        <h2>Local</h2>
+        <li>March / 22nd - 23rd</li>
+        <li>April / 5th - 6th</li>
+        <li>May / 3rd - 4th</li>
+        <li>June / 7th - 8th</li>
+        <li>July / 12th - 13th</li>
+        <li>August / 2nd - 3rd</li>
+      </ul>
+      <ul class="right-list">
+        <h2>National</h2>
+        <li>March / 28th - 30th / Dallas, TX</li>
+        <li>April / 11th - 13th / Bryan, TX</li>
+        <li>April / 18th - 20th / Oklahoma City, OK</li>
+        <li>April / 25th - 27th / Monroe, LA</li>
+        <li>*May / 16th - 18th / Wichita, KS</li>
+        <li>*July / 10th - 14th / Richmond, VA</li>
+        <li>*July / 18th - 20th / College Station, TX</li>
+        <li>July / 24th - 27th / Orlando, FL</li>
+        <h4>* = Live Period</h4>
+      </ul>
+    </div>
+    <div class="schedule-container">
+      <h1>Practice Schedule</h1>
+      <div class="schedule">
+        <div class="day">
+          <h2>Monday</h2>
+          <ul>
+            <li>7:00 - 8:00 | Conditioning (HS)</li>
+            <li>8:00 - 9:30 | 2027 Red / 2028 Red</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h2>Tuesday</h2>
+          <ul>
+            <li>6:30 - 8:00 | 2030 Boys / 2030 Girls</li>
+            <li>7:00 - 8:00 | Conditioning (HS)</li>
+            <li>8:00 - 9:30 | 2027 Black / 2028 Black</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h2>Wednesday</h2>
+          <ul>
+            <li>7:00 - 8:00 | Conditioning (HS)</li>
+            <li>8:00 - 9:30 | 2027 Red / 2028 Red</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h2>Thursday</h2>
+          <ul>
+            <li>6:30 - 8:00 | 2030 Boys / 2030 Girls</li>
+            <li>7:00 - 8:00 | Conditioning (HS)</li>
+            <li>8:00 - 9:30 | 2027 Black / 2028 Black</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+   <section id="contact">
+    <h1>Contact</h1>
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/nextplaysa?igsh=MW8wbGJuczZ6bmgxYQ==" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://x.com/NextPlaySA?s=09" target="_blank"><i class="ri-twitter-x-line"></i></a>
+        <span id="email-icon"><i class="ri-mail-line"></i></span>
+        <span id="phone-icon"><i class="ri-phone-line"></i></span>
+      </div>
+      <span class="copyright">&copy; 2025 Next Play Skills Academy. All rights reserved.</span>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
