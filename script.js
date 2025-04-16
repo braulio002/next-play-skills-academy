@@ -28,21 +28,27 @@ themeToggle.addEventListener("click", () => {
 const videos = document.querySelectorAll('video');
 
 videos.forEach(video => {
-  video.addEventListener('play', () => {
-    videos.forEach(otherVideo => {
-      if (otherVideo != video) {
-        otherVideo.pause();
-      }
-    })
-      
-    video.volume=0.5
-    document.body.classList.add('video-playing');
-    });
+  video.muted = true;
+  video.volume = 0;
 
-    video.addEventListener('pause', () => {
-      document.body.classList.remove('video-playing');
-    });
+  video.addEventListener('volumechange', () => {
+    video.muted = true;
+    video.volume = 0;
   });
+});
+
+videos.forEach(video => {
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    
+    video.muted = true;
+    video.volume = 0;
+  });
+});
 
 // Splash Screen
 window.addEventListener('load', function() {
