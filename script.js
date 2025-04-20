@@ -35,9 +35,7 @@ videos.forEach(video => {
     video.muted = true;
     video.volume = 0;
   });
-});
 
-videos.forEach(video => {
   video.addEventListener('click', () => {
     if (video.paused) {
       video.play();
@@ -47,6 +45,11 @@ videos.forEach(video => {
     
     video.muted = true;
     video.volume = 0;
+  });
+  
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play();
   });
 });
 
