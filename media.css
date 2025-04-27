@@ -1,0 +1,216 @@
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px; /* Shorter navbar on mobile? */
+  }
+}
+
+@media (max-width: 1199px) {
+  .logo {
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 32px;
+  }
+  
+  .nav-links {
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    font-size: 20px;
+  }
+  
+  .schedule {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tour-sched {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-list, .right-list {
+    width: 90%;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 28px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+  }
+  
+  .about-us-box {
+    margin-top: 80px;
+    padding: 30px 15px;
+  }
+  
+  .about-us-box h1 {
+    font-size: 28px;
+  }
+  
+  .about-us {
+    font-size: 16px;
+  }
+  
+  #schedules {
+    font-size: 24px;
+    padding: 60px 15px 80px;
+  }
+  
+  .schedule {
+    grid-template-columns: 1fr;
+    padding-top: 5vh;
+  }
+  
+  #contact {
+    font-size: 24px;
+    padding: 60px 15px 80px;
+  }
+}
+
+@media (max-width: 510px) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 15px 10px;
+    height: 70px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .hamburger-icon {
+    padding: 20px;
+    right: 10px;
+  }
+  
+  .mobile-menu {
+    width: 200px;
+  }
+  
+  .about-us-box {
+    margin-top: 60px;
+    padding: 20px 10px;
+  }
+  
+  .about-us-box h1 {
+    font-size: 24px;
+  }
+  
+  #schedules h1, #schedules h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .left-list, .right-list {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  #contact {
+    font-size: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+  }
+  
+  footer {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #theme-toggle {
+    top: 70px; /* Lower position */
+    left: 10px; /* Less side padding */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  
+  /* Optional: Move button when videos are playing */
+  .video-playing #theme-toggle {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+}
+
+/* Tall Screens (Vertical Monitors) */
+@media (min-height: 1000px) {
+  #schedules {
+    min-height: 70vh;
+  }
+  
+  .schedule {
+    padding-top: 5vh;
+  }
+  
+  #contact {
+    min-height: 40vh;
+  }
+}
+
+/* Landscape Mobile Devices */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-menu {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .menu-links li {
+    padding: 12px 0;
+  }
+  
+  #schedules {
+    min-height: 150vh;
+  }
+  
+  .schedule-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-container {
+    flex-direction: column;
+  }
+  
+  .video-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .photo-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
