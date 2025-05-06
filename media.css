@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 60px; /* Shorter navbar on mobile? */
+    scroll-padding-top: 60px;
   }
 }
 
@@ -41,7 +41,6 @@
   }
 }
 
-/* Tablets (768px and below) */
 @media (max-width: 768px) {
   .logo {
     font-size: 28px;
@@ -145,13 +144,6 @@
 }
 
 @media (max-width: 768px) {
-  #theme-toggle {
-    top: 70px; /* Lower position */
-    left: 10px; /* Less side padding */
-    transform: scale(0.9); /* Slightly smaller */
-  }
-  
-  /* Optional: Move button when videos are playing */
   .video-playing #theme-toggle {
     top: 10px;
     right: 10px;
